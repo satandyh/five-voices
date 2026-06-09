@@ -21,9 +21,17 @@ describe("FIVE_VARIANTS_PROMPT_TEMPLATE", () => {
   });
 
   it("contains mixed-language, abbreviation, and term guidance", () => {
-    expect(FIVE_VARIANTS_PROMPT_TEMPLATE).toContain("разные языки");
+    expect(FIVE_VARIANTS_PROMPT_TEMPLATE).toContain(
+      "основной язык SOURCE_TEXT",
+    );
+    expect(FIVE_VARIANTS_PROMPT_TEMPLATE).toContain("каким бы он ни был");
+    expect(FIVE_VARIANTS_PROMPT_TEMPLATE).toContain(
+      "Не переводи текст на язык этих инструкций",
+    );
+    expect(FIVE_VARIANTS_PROMPT_TEMPLATE).toContain("смешанный");
     expect(FIVE_VARIANTS_PROMPT_TEMPLATE).toContain("аббревиатуры");
     expect(FIVE_VARIANTS_PROMPT_TEMPLATE).toContain("специальные термины");
+    expect(FIVE_VARIANTS_PROMPT_TEMPLATE).toContain("цитаты");
     expect(FIVE_VARIANTS_PROMPT_TEMPLATE).toContain("исходном языке");
   });
 
