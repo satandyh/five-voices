@@ -18,10 +18,12 @@ GitHub: https://github.com/satandyh/five-voices
 
 ```bash
 npm install
-npm run build
+npm run dev
 ```
 
 Raycast will ask for your OpenAI API key. The key is stored by Raycast as a password preference.
+
+Use `npm run build` to verify a production build before publishing or sharing changes.
 
 ## Use
 
