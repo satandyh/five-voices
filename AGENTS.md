@@ -1,19 +1,16 @@
 # Project Notes
 
-This repository contains a Raycast extension built with Codex. The extension improves selected or copied text by generating five editing variants through the OpenAI API.
+This is the `satandyh/five-voices` GitHub repository: a Raycast extension built with Codex for generating five improved text variants through the OpenAI API.
 
-## Working Guidelines
+## Keep In Mind
 
-- Keep behavior conservative: the extension reads selected text or clipboard text and can copy or replace user-selected content.
-- Do not store source text, generated variants, or OpenAI API keys in project files.
-- Preserve the Raycast command metadata in `package.json`.
-- Keep the main prompt easy to edit in `src/lib/prompt/prompt-template.ts`.
-- Keep operational defaults and constants easy to edit in `src/lib/app-config.ts`.
-- Prefer small, reviewable changes with tests for behavior that touches input handling, model selection, OpenAI requests, parsing, formatting, or clipboard actions.
+- Do not store source text, generated variants, OpenAI API keys, `.env` files, or local Raycast artifacts in git.
+- Keep the prompt in `src/lib/prompt/prompt-template.ts`.
+- Keep editable defaults in `src/lib/app-config.ts`.
+- Preserve Raycast command settings in `package.json`.
+- Prefer small changes with tests when touching input handling, model selection, OpenAI calls, parsing, formatting, or clipboard actions.
 
-## Verification
-
-Run these checks after editing:
+## Verify
 
 ```bash
 npm test
