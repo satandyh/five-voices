@@ -2,6 +2,8 @@
 
 Raycast AI extension that turns selected or copied text into five improved variants using your OpenAI API key.
 
+![Five Voices Raycast interface](assets/screenshot.png)
+
 GitHub: https://github.com/satandyh/five-voices
 
 ## Variants
