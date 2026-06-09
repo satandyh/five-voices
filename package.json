@@ -1,0 +1,58 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "five-variants-raycast",
+  "title": "Five Variants",
+  "description": "Generate five copy-ready Russian text editing variants from selected or copied text.",
+  "icon": "command-icon.png",
+  "author": "antong",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "improve-text-five-variants",
+      "title": "Improve Text: Five Variants",
+      "description": "Generate five editing variants from selected or copied text.",
+      "mode": "view"
+    },
+    {
+      "name": "choose-openai-model",
+      "title": "Choose OpenAI Model",
+      "description": "Fetch available OpenAI models and save the model used for text variants.",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "openaiApiKey",
+      "title": "OpenAI API Key",
+      "description": "Stored locally by Raycast as a password preference.",
+      "type": "password",
+      "required": true
+    },
+    {
+      "name": "model",
+      "title": "OpenAI Model",
+      "description": "Model used for generating variants.",
+      "type": "textfield",
+      "required": true,
+      "default": "gpt-5.4-mini"
+    }
+  ],
+  "scripts": {
+    "dev": "ray develop",
+    "build": "ray build",
+    "lint": "ray lint",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@raycast/api": "^1.100.0",
+    "@raycast/utils": "^1.17.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.0.4",
+    "@types/node": "^24.0.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  }
+}

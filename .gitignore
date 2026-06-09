@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+dist/
+.raycast/
+.npm-cache/
+coverage/
+*.log
+*.local
+.env
+.env.*
+!.env.example
